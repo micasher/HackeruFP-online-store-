@@ -1,4 +1,4 @@
-# NodeJsProj - Michael Shermak
+# HackeruFP-online-store - Michael Shermak
 
 ## Server Configuration
 

@@ -1,0 +1,28 @@
+[
+  {
+    "name": {
+      "first": "Michael1",
+      "last": "Sh"
+    },
+    "email": "Michael@gmail.com",
+    "password": "Aa123456!",
+
+    "isAdmin": true
+  },
+  {
+    "name": {
+      "first": "Michael2",
+      "last": "Mi"
+    },
+    "email": "MichaelS@gmail.com",
+    "password": "Aa123456!"
+  },
+  {
+    "name": {
+      "first": "Michael3",
+      "last": "Mi"
+    },
+    "email": "MichaelM@gmail.com",
+    "password": "Aa123456!"
+  }
+]

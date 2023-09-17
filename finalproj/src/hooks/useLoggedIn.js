@@ -14,14 +14,16 @@ const useLoggedIn = () => {
       let { data } = await axios.get("/users/userInfo");
       if (!data) {
         localStorage.clear();
-        throw "invalid token";
+        throw new Error("invalid token");
       }
+      console.log("here");
       delete data.__v;
       delete data.createdAt;
       delete data.password;
       const payload = jwt_decode(token);
       let fullObjOfRedux = { payload, data };
       dispatch(authActions.login(fullObjOfRedux));
+      return true;
     } catch (err) {
       //server error
       //invalid token
@@ -30,6 +32,7 @@ const useLoggedIn = () => {
       } else {
         toast.error("something went wrong, try again later please!");
       }
+      return true;
     }
   };
 };

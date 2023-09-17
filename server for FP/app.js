@@ -26,9 +26,9 @@ app.use(
   })
 );
 
-app.get("/", function (req, res) {
+/* app.get("/", function (req, res) {
   res.render("pages/auth");
-});
+}); */
 
 app.use(
   cors({
